@@ -415,7 +415,7 @@
                     <div class="absolute inset-y-0 left-0 pl-3 flex items-center pointer-events-none text-slate-400">
                       <i data-lucide="user" class="h-4 w-4"></i>
                     </div>
-                    <input type="text" placeholder="Seu nome" class="w-full bg-[#1e293b] border border-slate-600 text-white rounded-xl py-2.5 pl-10 pr-4 text-sm focus:outline-none focus:border-blue-500 focus:ring-1 focus:ring-blue-500 transition" />
+                    <input type="text" name="Nome" required placeholder="Seu nome" class="w-full bg-[#1e293b] border border-slate-600 text-white rounded-xl py-2.5 pl-10 pr-4 text-sm focus:outline-none focus:border-blue-500 focus:ring-1 focus:ring-blue-500 transition" />
                   </div>
                 </div>
                 <div>
@@ -424,7 +424,7 @@
                     <div class="absolute inset-y-0 left-0 pl-3 flex items-center pointer-events-none text-slate-400">
                       <i data-lucide="phone" class="h-4 w-4"></i>
                     </div>
-                    <input type="tel" placeholder="(21) 99999-9999" class="w-full bg-[#1e293b] border border-slate-600 text-white rounded-xl py-2.5 pl-10 pr-4 text-sm focus:outline-none focus:border-blue-500 focus:ring-1 focus:ring-blue-500 transition" />
+                    <input type="tel" name="WhatsApp" required placeholder="(21) 99999-9999" class="w-full bg-[#1e293b] border border-slate-600 text-white rounded-xl py-2.5 pl-10 pr-4 text-sm focus:outline-none focus:border-blue-500 focus:ring-1 focus:ring-blue-500 transition" />
                   </div>
                 </div>
                 <div>
@@ -433,16 +433,16 @@
                     <div class="absolute inset-y-0 left-0 pl-3 flex items-center pointer-events-none text-slate-400">
                       <i data-lucide="building-2" class="h-4 w-4"></i>
                     </div>
-                    <select class="w-full bg-[#1e293b] border border-slate-600 text-white rounded-xl py-2.5 pl-10 pr-10 text-sm focus:outline-none focus:border-blue-500 focus:ring-1 focus:ring-blue-500 transition appearance-none">
-                      <option>Quero um comparativo geral</option>
-                      <option>Assim Saúde</option>
-                      <option>Leve Saúde</option>
-                      <option>Amil</option>
-                      <option>SulAmérica</option>
-                      <option>Bradesco Saúde</option>
-                      <option>MedSenior</option>
-                      <option>Klini Saúde</option>
-                      <option>Cemeru</option>
+                    <select name="Operadora_Interesse" class="w-full bg-[#1e293b] border border-slate-600 text-white rounded-xl py-2.5 pl-10 pr-10 text-sm focus:outline-none focus:border-blue-500 focus:ring-1 focus:ring-blue-500 transition appearance-none">
+                      <option value="Quero um comparativo geral">Quero um comparativo geral</option>
+                      <option value="Assim Saúde">Assim Saúde</option>
+                      <option value="Leve Saúde">Leve Saúde</option>
+                      <option value="Amil">Amil</option>
+                      <option value="SulAmérica">SulAmérica</option>
+                      <option value="Bradesco Saúde">Bradesco Saúde</option>
+                      <option value="MedSenior">MedSenior</option>
+                      <option value="Klini Saúde">Klini Saúde</option>
+                      <option value="Cemeru">Cemeru</option>
                     </select>
                     <div class="absolute inset-y-0 right-0 pr-3 flex items-center pointer-events-none text-slate-400">
                       <i data-lucide="chevron-down" class="h-4 w-4"></i>
@@ -455,10 +455,10 @@
                     <div class="absolute inset-y-0 left-0 pl-3 flex items-center pointer-events-none text-slate-400">
                       <i data-lucide="layers" class="h-4 w-4"></i>
                     </div>
-                    <select class="w-full bg-[#1e293b] border border-slate-600 text-white rounded-xl py-2.5 pl-10 pr-10 text-sm focus:outline-none focus:border-blue-500 focus:ring-1 focus:ring-blue-500 transition appearance-none">
-                      <option>Plano Individual / Familiar</option>
-                      <option>Plano Empresarial / MEI</option>
-                      <option>Plano por Adesão</option>
+                    <select name="Tipo_Plano" class="w-full bg-[#1e293b] border border-slate-600 text-white rounded-xl py-2.5 pl-10 pr-10 text-sm focus:outline-none focus:border-blue-500 focus:ring-1 focus:ring-blue-500 transition appearance-none">
+                      <option value="Plano Individual / Familiar">Plano Individual / Familiar</option>
+                      <option value="Plano Empresarial / MEI">Plano Empresarial / MEI</option>
+                      <option value="Plano por Adesão">Plano por Adesão</option>
                     </select>
                     <div class="absolute inset-y-0 right-0 pr-3 flex items-center pointer-events-none text-slate-400">
                       <i data-lucide="chevron-down" class="h-4 w-4"></i>
@@ -613,6 +613,7 @@
       icon.classList.toggle('rotate-180');
     }
   </script>
+  <script src="js/main.js"></script>
 </body>
 </html>
 
